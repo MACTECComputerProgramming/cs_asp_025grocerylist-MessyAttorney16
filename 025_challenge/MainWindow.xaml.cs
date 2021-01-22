@@ -24,5 +24,22 @@ namespace _025_challenge
         {
             InitializeComponent();
         }
+        int itemNumber;
+        
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            itemNumber = int.Parse(itemNumberBox.Text);
+            string[] items = new string[itemNumber];
+
+
+
+
+
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -7,16 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="185,98,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="579,175,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="130,201,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="245,214,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="185,164,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="168,322,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="68,266,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Margin="226,266,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="130,245,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="216,245,0,0" VerticalAlignment="Top"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="267" Margin="489,105,0,0" VerticalAlignment="Top" Width="231"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="105" Margin="43,96,0,0" VerticalAlignment="Top" Width="341"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="151" Margin="43,221,0,0" VerticalAlignment="Top" Width="341"/>
+        <TextBox x:Name="itemNumberBox" HorizontalAlignment="Left" Margin="135,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center"/>
+        <Label x:Name="itemListLabel" Content="Label" HorizontalAlignment="Left" Margin="506,114,0,0" VerticalAlignment="Top"/>
+        <Label Content="Item Number" HorizontalAlignment="Left" Margin="80,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="195,217,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Number of Items in List" HorizontalAlignment="Left" Margin="97,160,0,0" VerticalAlignment="Top" Width="186" Height="28" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Add Item" HorizontalAlignment="Left" Margin="168,322,0,0" VerticalAlignment="Top" Click="button2_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="68,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="226,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Item" HorizontalAlignment="Left" Margin="68,248,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="Price of Item" HorizontalAlignment="Left" Margin="226,248,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="Logan's Grocery List" HorizontalAlignment="Left" Margin="80,46,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Total Cost:" HorizontalAlignment="Left" Margin="586,332,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="totalCostLabel" Content="" HorizontalAlignment="Left" Margin="656,332,0,0" VerticalAlignment="Top" Width="53"/>
 
     </Grid>
 </Window>
