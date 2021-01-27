@@ -24,22 +24,29 @@ namespace _025_challenge
         {
             InitializeComponent();
         }
+        
         int itemNumber;
         
-        private void button1_Click(object sender, RoutedEventArgs e)
+        
+
+        public void button1_Click(object sender, RoutedEventArgs e)
         {
+            //take number entered and make it have value and make array of same size as the number entered
             itemNumber = int.Parse(itemNumberBox.Text);
             string[] items = new string[itemNumber];
 
-
-
-
-
+            //Change Labels 
+            enterItemsLabel.Content = "Enter Items Below";
+            itemNumberLabel.Content = "1";
+            numberOfItemsLabel.Content = itemNumber;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
 
+
+
+            itemListLabel.Content = 
         }
     }
 }
