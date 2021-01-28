@@ -7,14 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="267" Margin="489,105,0,0" VerticalAlignment="Top" Width="231"/>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="105" Margin="43,96,0,0" VerticalAlignment="Top" Width="341"/>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="151" Margin="44,256,0,0" VerticalAlignment="Top" Width="341"/>
-        <TextBox x:Name="itemNumberBox" HorizontalAlignment="Left" Margin="135,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center"/>
-        <Label x:Name="itemListLabel" Content="Label" HorizontalAlignment="Left" Margin="506,114,0,0" VerticalAlignment="Top"/>
-        <Label Content="Item Number:" HorizontalAlignment="Left" Margin="98,261,0,0" VerticalAlignment="Top"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="267" Margin="489,105,0,0" VerticalAlignment="Top" Width="231">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5E5E65"/>
+                    <GradientStop Color="#FF3A3DDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="105" Margin="43,96,0,0" VerticalAlignment="Top" Width="341">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF333335"/>
+                    <GradientStop Color="#FFE81212" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="151" Margin="44,256,0,0" VerticalAlignment="Top" Width="341">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE7EEE2"/>
+                    <GradientStop Color="#FF61D916" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <TextBox x:Name="itemNumberBox" HorizontalAlignment="Left" Margin="154,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center"/>
+        <Label x:Name="itemListLabel" Content="" HorizontalAlignment="Left" Margin="506,114,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Item Number:" HorizontalAlignment="Left" Margin="98,261,0,0" VerticalAlignment="Top"/>
         <Label x:Name="enterItemsLabel" Content="" HorizontalAlignment="Left" Margin="128,213,0,0" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="button1" Content="Number of Items in List:" HorizontalAlignment="Left" Margin="97,160,0,0" VerticalAlignment="Top" Width="186" Height="28" Click="button1_Click"/>
+        <Button x:Name="button1" Content="Start List" HorizontalAlignment="Left" Margin="122,160,0,0" VerticalAlignment="Top" Width="186" Height="28" Click="button1_Click"/>
         <Button x:Name="button2" Content="Add Item" HorizontalAlignment="Left" Margin="169,357,0,0" VerticalAlignment="Top" Click="button2_Click"/>
         <TextBox x:Name="itemBox" HorizontalAlignment="Left" Margin="69,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="itemPriceBox" HorizontalAlignment="Left" Margin="227,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
@@ -25,6 +46,7 @@
         <Label x:Name="totalCostLabel" Content="" HorizontalAlignment="Left" Margin="656,332,0,0" VerticalAlignment="Top" Width="53"/>
         <Label x:Name="numberOfItemsLabel" Content="" HorizontalAlignment="Left" Margin="308,162,0,0" VerticalAlignment="Top"/>
         <Label x:Name="itemNumberLabel" Content="" HorizontalAlignment="Left" Margin="179,261,0,0" VerticalAlignment="Top" Width="35"/>
+        <Label x:Name="label1" Content="Number of Items:" HorizontalAlignment="Left" Margin="46,109,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
